@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Urbes Mundi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png">
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header">
+      <div class="site-mark">
+        <a href="index.html" class="logo-wrap" aria-label="Ir al inicio de Urbes Mundi">
+          <img src="logo.png" alt="Urbes Mundi">
+        </a>
+        <div>
+          <p class="site-title">Urbes Mundi</p>
+          <p class="site-note">Ciudades del mundo</p>
+        </div>
+      </div>
+
+      <nav class="site-nav">
+        <a href="galeria.html">Proyectos</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="galeria">
+        <div class="hero-copy">
+          <h1 class="hero-title">El mundo y la ciudad</h1>
+          <p class="hero-subtitle">
+            Recuerdos y fotografías de algunos viajes por el planeta en el siglo XXI (TBD)
+          </p>
+          <a class="hero-link" href="galeria.html">Ver todo</a>
+          <div class="hero-links" aria-label="Últimos proyectos publicados">          
+            <!-- ULTIMAS SER bienvenidaIES O ENTRADAS PUBLICADAS: mantener las mas nuevas arriba -->
+            <a class="hero-link-small" href="proyectos/6-interiores/6-interiores.html">Del otro lado de la ventana</a>
+            <a class="hero-link-small" href="proyectos/5-autumn-in-paris/5-autumn-in-paris.html">Autumn in Paris</a>
+            <a class="hero-link-small" href="proyectos/4-buenos-aires/4-buenos-aires.html">Buenos Aires</a>
+            <a class="hero-link-small" href="proyectos/3-bajo-tierra/3-bajo-tierra.html">Bajo tierra</a>
+            <a class="hero-link-small" href="proyectos/blog/260512 Bienvenida/entrada.html">Blog: Bienvenida</a>
+            <!-- <a class="hero-link-small" href="proyectos/2-bilbaoBN/2-bilbaoBN.html">Bilbao en B&N</a>
+            <a class="hero-link-small" href="proyectos/1-estocolmo/1-estocolmo.html">Estocolmo en invierno</a> -->
+          </div>
+        </div>
+
+        <div class="carousel-panel">
+          <div class="carousel-stage">
+            <div class="carousel-track">
+              <figure class="carousel-slide active">
+                <img src="proyectos/0-carrousel/carrousel2.jpeg" alt="Carrousel 1">
+              </figure>
+              <figure class="carousel-slide">
+                <img src="proyectos/0-carrousel/carrousel4.jpeg" alt="Carrousel 2">
+              </figure>
+              <figure class="carousel-slide">
+                <img src="proyectos/0-carrousel/carrousel7.jpeg" alt="Carrousel 3">
+              </figure>
+              <figure class="carousel-slide">
+                <img src="proyectos/0-carrousel/carrousel8.jpeg" alt="Carrousel 4">
+              </figure>
+              <figure class="carousel-slide">
+                <img src="proyectos/0-carrousel/carrousel9.jpeg" alt="Carrousel 5">
+              </figure>
+              <figure class="carousel-slide">
+                <img src="proyectos/0-carrousel/carrousel6.jpeg" alt="Carrousel 6">
+              </figure>
+              <figure class="carousel-slide">
+                <img src="proyectos/0-carrousel/carrousel1.jpeg" alt="Carrousel 7">
+              </figure>
+              <figure class="carousel-slide">
+                <img src="proyectos/0-carrousel/carrousel10.jpeg" alt="Carrousel 8">
+              </figure>
+              <figure class="carousel-slide">
+                <img src="proyectos/0-carrousel/carrousel3.jpeg" alt="Carrousel 9">
+              </figure>
+            </div>
+
+<!-- ============================== CARROUSEL ============================== 
+              1. Un <figure> dentro de .carousel-track:
+                  <figure class="carousel-slide">
+                    <img src="proyectos/0-carrousel/carrouselN.jpeg" alt="Descripcion breve">
+                  </figure>
+
+              Sustituye N por el número siguiente. La primera slide debe
+              mantener la clase "active" (solo una a la vez).
+              El contador y la lógica se actualizan solos.
+              ============================================================ -->
+
+            <div class="carousel-meta">
+              <div class="carousel-count" id="carousel-count">00 / 00</div>
+              <div class="carousel-controls">
+                <button class="carousel-btn" id="prev-btn" aria-label="Imagen anterior">&#8592;</button>
+                <button class="carousel-btn" id="next-btn" aria-label="Imagen siguiente">&#8594;</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-indicators" aria-label="Indicadores del carrusel">
+            <button class="carousel-dot active" aria-label="Ir a la imagen 1"></button>
+            <button class="carousel-dot" aria-label="Ir a la imagen 2"></button>
+            <button class="carousel-dot" aria-label="Ir a la imagen 3"></button>
+            <button class="carousel-dot" aria-label="Ir a la imagen 4"></button>
+            <button class="carousel-dot" aria-label="Ir a la imagen 5"></button>
+            <button class="carousel-dot" aria-label="Ir a la imagen 6"></button>
+            <button class="carousel-dot" aria-label="Ir a la imagen 7"></button>
+            <button class="carousel-dot" aria-label="Ir a la imagen 8"></button>
+            <button class="carousel-dot" aria-label="Ir a la imagen 9"></button>
+          </div>
+<!-- ============================== CARROUSEL INDICADORES ==============================
+
+            <button class="carousel-dot" aria-label="Ir a la imagen N"></button>
+
+============================================================ -->
+        </div>
+      </section>
+
+      <section class="projects" id="proyectos">
+        <div class="projects-header">
+          <div class="section-heading-group">
+            <h2 class="section-title-large">Proyectos</h2>
+          </div>
+        </div>
+
+<!-- ============================ ORDEN DE TARJETAS EN INICIO ===============================
+      | 1. LARGE | 2. MEDIUM |
+      | 3. TALL | 4. WIDE | 5. SMALL |
+      | 6. SMALL | 7. SMALL | 8. SMALL | 9. SMALL |
+============================================================================================= -->
+  
+
+  <!--======PARA AUTOMATIZAR ORDEN DE SERIES======
+        <div class="projects-grid" id="series-home"></div>
+   ============================================-->
+        <div class="projects-grid">
+
+
+          <a class="project-card large" href="proyectos/6-interiores/6-interiores.html">
+            <!--FOTO PORTADA-->
+            <img src="proyectos/6-interiores/portada.jpg" alt="Interiores">
+            <div class="project-info">
+              <div class="project-text">
+                <span class="project-kicker">Serie</span>
+                <!--NOMBRE SERIE-->
+                <span class="project-name">Interior</span>
+              </div>
+              <!--NÚMERO SERIE-->
+              <span class="project-index">06</span>
+            </div>
+          </a>
+
+          <a class="project-card medium" href="proyectos/5-autumn-in-paris/5-autumn-in-paris.html">
+            <!--FOTO PORTADA-->
+            <img src="proyectos/5-autumn-in-paris/portada.jpg" alt="Autumn in Paris">
+            <div class="project-info">
+              <div class="project-text">
+                <span class="project-kicker">Serie</span>
+                <!--NOMBRE SERIE-->
+                <span class="project-name">Autumn in Paris</span>
+              </div>
+              <!--NÚMERO SERIE-->
+              <span class="project-index">05</span>
+            </div>
+          </a>
+
+          <a class="project-card tall" href="proyectos/4-buenos-aires/4-buenos-aires.html">
+          
+            <img src="proyectos/4-buenos-aires/portada.jpg" alt="Buenos Aires">
+            <div class="project-info">
+              <div class="project-text">
+                <span class="project-kicker">Serie</span>
+          
+                <span class="project-name">Buenos Aires</span>
+              </div>
+              <span class="project-index">04</span>
+            </div>
+          </a>
+
+          <a class="project-card wide" href="proyectos/3-bajo-tierra/3-bajo-tierra.html">
+           
+            <img src="proyectos/3-bajo-tierra/portada.jpg" alt="Proyecto 3">
+            <div class="project-info">
+              <div class="project-text">
+                <span class="project-kicker">Serie</span>
+           
+                <span class="project-name">Bajo tierra</span>
+              </div>
+           
+              <span class="project-index">03</span>
+            </div>
+          </a>
+
+          <a class="project-card small" href="proyectos/2-bilbaoBN/2-bilbaoBN.html">
+           
+            <img src="proyectos/2-bilbaoBN/portada.jpg" alt="Bilbao en B&N">
+            <div class="project-info">
+              <div class="project-text">
+                <span class="project-kicker">Serie</span>
+           
+                <span class="project-name">Bilbao en B&N</span>
+              </div>
+           
+              <span class="project-index">02</span>
+            </div>
+          </a>
+
+        <a class="project-card small" href="proyectos/1-estocolmo/1-estocolmo.html">
+         
+            <img src="proyectos/1-estocolmo/portada.JPG" alt="Proyecto ">
+            <div class="project-info">
+              <div class="project-text">
+                <span class="project-kicker">Serie</span>
+         
+                <span class="project-name">Estocolmo en invierno</span>
+              </div>
+         
+              <span class="project-index">01</span>
+            </div>
+          </a>
+
+
+<!--=============PARA REDISTRIBUIR FOTOS MOSAICO TRUNCADO====================
+          
+  TAMAÑO TALL ========
+          ENLACE A SERIE
+          class="project-card small" href="proyectos/n-serie/"></a>
+            NÚMERO DE PROYECTO
+            <img src="proyectos/00carrousel/carrouselN.jpg" alt="Proyecto futuro N">
+            <div class="project-info">
+              <div class="project-text">
+                <span class="project-kicker">Serie</span>
+                NOMBRE SERIE
+                <span class="project-name">Proyecto 8</span>
+              </div>
+              NÚMERO SERIE
+              <span class="project-index">08</span>
+            </div>
+
+
+  TAMAÑO WIDE ========
+          ENLACE A SERIE
+          <a class="project-card small" href="proyectos/n-serie/"></a>
+            NÚMERO DE PROYECTO
+            <img src="proyectos/00carrousel/carrouselN.jpg" alt="Proyecto futuro N">
+            <div class="project-info">
+              <div class="project-text">
+                <span class="project-kicker">Serie</span>
+                NOMBRE SERIE
+                <span class="project-name">Proyecto 8</span>
+              </div>
+              NÚMERO SERIE
+              <span class="project-index">08</span>
+            </div>
+
+
+  TAMAÑO SMALL ========
+          ENLACE A SERIE
+          <a class="project-card small" href="proyectos/n-serie/">
+            NÚMERO DE PROYECTO
+            <img src="proyectos/00carrousel/carrouselN.jpg" alt="Proyecto futuro N">
+            <div class="project-info">
+              <div class="project-text">
+                <span class="project-kicker">Serie</span>
+                NOMBRE SERIE
+                <span class="project-name">Proyecto 8</span>
+              </div>
+              NÚMERO SERIE
+              <span class="project-index">08</span>
+            </div>
+
+=====================================================-->
+
+        </div>
+
+        <div class="section-link-bottom">
+          <a class="inline-link" href="galeria.html">Ver todos los proyectos</a>
+        </div>
+      </section>
+
+
+    <footer class="site-footer">
+      <p>© 2026</p>
+      <a class="site-footer-link" href="galeria.html">Explorar sitio</a>
+    </footer>
+  </div>
+
+  <script src="js/carrousel.js"></script>
+  <!--======PARA AUTOMATIZAR ORDEN DE SERIES===
+   <script src="js/series.js"></script> 
+   ============================================-->
+</body>
+</html>

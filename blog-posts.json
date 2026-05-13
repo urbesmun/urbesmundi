@@ -1,0 +1,18 @@
+[
+  {
+    "index": "01",
+    "title": "Bienvenida",
+    "meta": "Mayo, 2026",
+    "href": "proyectos/blog/260512/entrada.html",
+    "date": "2026-05-12",
+    "published": true
+  },
+  {
+    "index": "N",
+    "title": "Titulo de la entrada",
+    "meta": "Ciudad, Pais · Año",
+    "href": "proyectos/blog/entrada-N.html",
+    "date": "2026-01-01",
+    "published": false
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "uso": {
+    "criterio": "Las series mas nuevas van primero. index.html muestra las 9 primeras series publicadas. galeria.html muestra todas, tambien de mas nueva a mas vieja.",
+    "indexLayouts": ["large", "medium", "tall", "wide", "small", "small", "small", "small", "small"],
+    "galleryLayouts": ["primary", "secondary", "secondary", "primary", "tertiary", "square", "square", "square", "square", "square", "square"],
+    "nota": "Este archivo es una fuente de trabajo. Ahora no modifica index.html ni galeria.html automaticamente."
+  },
+  "series": [
+    {
+      "id": "N-serie",
+      "index": "NN",
+      "title": "Titulo de la serie nueva",
+      "type": "Serie",
+      "href": "proyectos/N-serie/N-serie.html",
+      "cover": "proyectos/N-serie/portada.jpg",
+      "homeLayout": "large",
+      "galleryLayout": "primary",
+      "published": false
+    },
+    {
+      "id": "3-bajo-tierra",
+      "index": "03",
+      "title": "Bajo tierra",
+      "type": "Serie",
+      "href": "proyectos/3-bajo-tierra/3-bajo-tierra.html",
+      "cover": "proyectos/3-bajo-tierra/portada.jpg",
+      "homeLayout": "large",
+      "galleryLayout": "primary",
+      "published": true
+    },
+    {
+      "id": "2-bilbaoBN",
+      "index": "02",
+      "title": "Bilbao en B&N",
+      "type": "Serie",
+      "href": "proyectos/2-bilbaoBN/2-bilbaoBN.html",
+      "cover": "proyectos/2-bilbaoBN/portada.jpg",
+      "homeLayout": "medium",
+      "galleryLayout": "secondary",
+      "published": true
+    },
+    {
+      "id": "1-estocolmo",
+      "index": "01",
+      "title": "Estocolmo en invierno",
+      "type": "Serie",
+      "href": "proyectos/1-estocolmo/1-estocolmo.html",
+      "cover": "proyectos/1-estocolmo/portada.jpg",
+      "homeLayout": "tall",
+      "galleryLayout": "tertiary",
+      "published": true
+    }
+  ]
+}

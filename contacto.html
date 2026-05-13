@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto — Urbes Mundi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png">
+</head>
+<body>
+  <div class="shell">
+    <header class="site-header">
+      <div class="site-mark">
+        <a href="index.html" class="logo-wrap" aria-label="Ir al inicio de Urbes Mundi">
+          <img src="logo.png" alt="Urbes Mundi">
+        </a>
+        <div>
+          <p class="site-title">Urbes Mundi</p>
+          <p class="site-note">Ciudades del mundo</p>
+        </div>
+      </div>
+
+      <nav class="site-nav">
+        <a href="galeria.html">Proyectos</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main class="info-page">
+      <section class="info-section">
+        <div class="section-heading-group">
+          <h2 class="section-title-large">Contacto</h2>
+        </div>
+
+<!-- ================== TEXTO DE CONTACTO ================== -->
+        <div class="info-copy">
+          <p style="margin-bottom: 36px;">
+            En esta página encontrarás la manera de contactarme. Deja tu pregunta, sugerencia o consulta en el formulario de abajo. Si estás interesado en las fotos publicadas o quieres imprimir alguna, no dude en escribirme <a href="mailto:j.urbesmundi@gmail.com">aquí</a>. Te responderé tan pronto como pueda. 
+          </p>
+          <form id="contact-form" novalidate>
+
+            <div class="form-row">
+              <label class="form-label" for="nombre">Nombre</label>
+              <input class="form-input" id="nombre" name="nombre" type="text"
+                     autocomplete="name">
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="email">Correo electrónico</label>
+              <input class="form-input" id="email" name="email" type="email"
+                     autocomplete="email" required>
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="asunto">Asunto</label>
+              <input class="form-input" id="asunto" name="asunto" type="text">
+            </div>
+
+            <div class="form-row">
+              <label class="form-label" for="mensaje">Mensaje</label>
+              <textarea class="form-textarea" id="mensaje" name="mensaje"></textarea>
+            </div>
+
+            <button class="form-submit" type="submit">Enviar mensaje</button>
+
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Urbes Mundi</p>
+      <nav class="footer-legal">
+        <a class="site-footer-link" href="galeria.html">Explorar sitio</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nombre  = document.getElementById('nombre').value;
+      const email   = document.getElementById('email').value;
+      const asunto  = document.getElementById('asunto').value || 'Contacto — Urbes Mundi';
+      const mensaje = document.getElementById('mensaje').value;
+
+      const cuerpo = `Nombre: ${nombre}\nEmail: ${email}\n\nMensaje:\n${mensaje}`;
+      const enlace = `mailto:j.urbesmundi@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+
+      window.location.href = enlace;
+    });
+  </script>
+</body>
+</html>
